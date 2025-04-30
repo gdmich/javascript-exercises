@@ -1,4 +1,17 @@
-const repeatString = function() {
+const repeatString = function(phrase, repeats) {
+
+    if(repeats < 0){
+
+        return "ERROR";
+    }
+
+    let repeated = "";
+    
+    for(;repeats >0; repeats--){
+        repeated += phrase;
+    }
+
+    return repeated;
 
 };
 
